@@ -10,6 +10,7 @@ Url:		http://www.kdevelop.org
 Source0:	http://download.kde.org/stable/kdevelop/%{kdevelop_ver}/src/%{name}-%{version}.tar.xz
 BuildRequires:	kdevplatform-devel >= 4:%{version}
 BuildRequires:	kdevelop-pg-qt-devel >= 0.9.82
+BuildRequires:	pkgconfig(python3)
 BuildRequires:	pkgconfig(Qt5Core)
 BuildRequires:	pkgconfig(Qt5Widgets)
 BuildRequires:	pkgconfig(Qt5Test)
