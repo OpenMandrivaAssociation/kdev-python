@@ -33,7 +33,7 @@ and code-completion) to KDevelop.
 %{_libdir}/libkdevpythoncompletion.so
 %{_libdir}/libkdevpythonduchain.so
 %{_libdir}/libkdevpythonparser.so
-%{_libdir}/qt5/plugins/kdevplatform/31/*.so
+%{_libdir}/qt5/plugins/kdevplatform/33/*.so
 %{_datadir}/kdevappwizard/templates/*.tar.bz2
 %{_datadir}/kdevpythonsupport
 %{_datadir}/metainfo/*.xml
