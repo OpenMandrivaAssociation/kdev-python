@@ -29,7 +29,7 @@ This plugin adds python language support (including classview
 and code-completion) to KDevelop.
 
 %files -f kdevpython.lang
-%{_sysconfdir}/xdg/kdevpythonsupport.categories
+#{_sysconfdir}/xdg/kdevpythonsupport.categories
 %{_libdir}/libkdevpythoncompletion.so
 %{_libdir}/libkdevpythonduchain.so
 %{_libdir}/libkdevpythonparser.so
