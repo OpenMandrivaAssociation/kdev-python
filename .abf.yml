@@ -1,4 +1,2 @@
-removed_sources:
-  kdev-python-5.2.1.tar.xz: 52f7f911033685d2b3abd2101ab4ca7ee4e5c4bf
 sources:
-  kdev-python-5.3.1.tar.xz: 968fe73d832a3904307996895bfe875ba431bc3f
+  kdev-python-5.5.0.tar.xz: 1bfe2a9f4846acbcd93be7feabafa1a80659a4b1

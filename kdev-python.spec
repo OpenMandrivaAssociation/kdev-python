@@ -2,8 +2,8 @@
 
 Summary:	Python plugin for kdevelop
 Name:		kdev-python
-Version:	5.3.1
-Release:	2
+Version:	5.5.0
+Release:	1
 License:	GPLv2+
 Group:		Development/Other
 Url:		http://www.kdevelop.org
@@ -29,11 +29,11 @@ This plugin adds python language support (including classview
 and code-completion) to KDevelop.
 
 %files -f kdevpython.lang
-%{_sysconfdir}/xdg/kdevpythonsupport.categories
+%{_datadir}/qlogging-categories5/kdevpythonsupport.categories
 %{_libdir}/libkdevpythoncompletion.so
 %{_libdir}/libkdevpythonduchain.so
 %{_libdir}/libkdevpythonparser.so
-%{_libdir}/qt5/plugins/kdevplatform/31/*.so
+%{_libdir}/qt5/plugins/kdevplatform/33/*.so
 %{_datadir}/kdevappwizard/templates/*.tar.bz2
 %{_datadir}/kdevpythonsupport
 %{_datadir}/metainfo/*.xml
