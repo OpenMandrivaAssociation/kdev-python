@@ -8,6 +8,7 @@ License:	GPLv2+
 Group:		Development/Other
 Url:		http://www.kdevelop.org
 Source0:	http://download.kde.org/stable/kdevelop/%{kdevelop_ver}/src/%{name}-%{version}.tar.xz
+Patch0:		https://invent.kde.org/kdevelop/kdev-python/-/merge_requests/16.patch
 BuildRequires:	kdevplatform-devel >= 4:%{version}
 BuildRequires:	kdevelop-pg-qt-devel >= 0.9.82
 BuildRequires:	pkgconfig(python3)
@@ -33,18 +34,18 @@ and code-completion) to KDevelop.
 %{_libdir}/libkdevpythoncompletion.so
 %{_libdir}/libkdevpythonduchain.so
 %{_libdir}/libkdevpythonparser.so
-%{_libdir}/qt5/plugins/kdevplatform/35/*.so
+%{_libdir}/qt5/plugins/kdevplatform/36
 %{_datadir}/kdevappwizard/templates/*.tar.bz2
 %{_datadir}/kdevpythonsupport
 %{_datadir}/metainfo/*.xml
 #--------------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
+%cmake_kde5 -DBSDTAR=1 -DBUILD_TESTING=OFF
 
 %build
-%cmake_kde5 -DBSDTAR=1 -DBUILD_TESTING=OFF
-%ninja
+%ninja_build -C build
 
 %install
 %ninja_install -C build
