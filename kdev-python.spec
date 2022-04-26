@@ -1,15 +1,13 @@
-%define kdevelop_ver 5.%(echo %{version} | cut -d. -f2,3)
-
 Summary:	Python plugin for kdevelop
 Name:		kdev-python
-Version:	22.03.90
+Version:	22.04.0
 Release:	1
 License:	GPLv2+
 Group:		Development/Other
 Url:		http://www.kdevelop.org
-Source0:	http://download.kde.org/stable/kdevelop/%{kdevelop_ver}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/stable/release-service/%{version}/src/%{name}-%{version}.tar.xz
 Patch0:		https://invent.kde.org/kdevelop/kdev-python/-/merge_requests/16.patch
-BuildRequires:	kdevplatform-devel >= 4:%{version}
+BuildRequires:	kdevplatform-devel >= %{EVRD}
 BuildRequires:	kdevelop-pg-qt-devel >= 0.9.82
 BuildRequires:	pkgconfig(python3)
 BuildRequires:	pkgconfig(Qt5Core)
@@ -23,7 +21,7 @@ BuildRequires:	cmake(KF5I18n)
 BuildRequires:	cmake(KF5ItemModels)
 BuildRequires:	cmake(KF5KCMUtils)
 BuildRequires:	cmake(KDevelop)
-Requires:	kdevelop >= 4:%{kdevelop_ver}
+Requires:	kdevelop >= %{EVRD}
 
 %description
 This plugin adds python language support (including classview 
@@ -51,4 +49,3 @@ and code-completion) to KDevelop.
 %ninja_install -C build
 
 %find_lang kdevpython
-
