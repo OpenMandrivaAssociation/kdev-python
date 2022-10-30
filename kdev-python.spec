@@ -1,7 +1,7 @@
 Summary:	Python plugin for kdevelop
 Name:		kdev-python
 Version:	22.08.2
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Development/Other
 Url:		http://www.kdevelop.org
