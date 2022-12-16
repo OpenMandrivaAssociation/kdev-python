@@ -1,12 +1,11 @@
 Summary:	Python plugin for kdevelop
 Name:		kdev-python
-Version:	22.08.3
+Version:	22.12.0
 Release:	1
 License:	GPLv2+
 Group:		Development/Other
 Url:		http://www.kdevelop.org
 Source0:	http://download.kde.org/%([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un)stable/release-service/%{version}/src/%{name}-%{version}.tar.xz
-Patch0:		https://invent.kde.org/kdevelop/kdev-python/-/merge_requests/16.patch
 BuildRequires:	kdevplatform-devel >= %{EVRD}
 BuildRequires:	kdevelop-pg-qt-devel >= 0.9.82
 BuildRequires:	pkgconfig(python3)
