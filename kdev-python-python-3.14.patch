@@ -1,0 +1,12 @@
+diff -up kdev-python-25.12.0/CMakeLists.txt.omv~ kdev-python-25.12.0/CMakeLists.txt
+--- kdev-python-25.12.0/CMakeLists.txt.omv~	2025-12-18 01:19:51.959859542 +0100
++++ kdev-python-25.12.0/CMakeLists.txt	2025-12-18 01:19:57.466934065 +0100
+@@ -42,7 +42,7 @@ add_definitions( -DTRANSLATION_DOMAIN=\"
+ 
+ set(Python3_USE_STATIC_LIBS FALSE)
+ set(Python3_FIND_STRATEGY VERSION)
+-find_package(Python3 3.4.3...<3.14 COMPONENTS Interpreter Development REQUIRED)
++find_package(Python3 3.4.3...<4.0 COMPONENTS Interpreter Development REQUIRED)
+ 
+ configure_file(kdevpythonversion.h.cmake "${CMAKE_CURRENT_BINARY_DIR}/kdevpythonversion.h" @ONLY)
+ 
