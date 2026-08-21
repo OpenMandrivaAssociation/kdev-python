@@ -1,6 +1,6 @@
 Summary:	Python plugin for kdevelop
 Name:		kdev-python
-Version:	26.04.3
+Version:	26.08.0
 Release:	1
 License:	GPLv2+
 Group:		Development/Other
@@ -25,9 +25,6 @@ BuildSystem:	cmake
 BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
 BuildOption:	-DBSDTAR:BOOL=ON
 BuildOption:	-DBUILD_TESTING:BOOL=OFF
-
-%patchlist
-kdev-python-python-3.14.patch
 
 %description
 This plugin adds python language support (including classview 
