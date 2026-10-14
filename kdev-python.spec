@@ -6,7 +6,7 @@ License:	GPLv2+
 Group:		Development/Other
 Url:		https://www.kdevelop.org
 Source0:	http://download.kde.org/%([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un)stable/release-service/%{version}/src/%{name}-%{version}.tar.xz
-BuildRequires:	kdevplatform-devel >= %{EVRD}
+BuildRequires:	kdevplatform-devel >= %{version}
 BuildRequires:	kdevelop-pg-qt-devel >= 0.9.82
 BuildRequires:	pkgconfig(python3)
 BuildRequires:	pkgconfig(Qt6Core)
@@ -20,7 +20,7 @@ BuildRequires:	cmake(KF6I18n)
 BuildRequires:	cmake(KF6ItemModels)
 BuildRequires:	cmake(KF6KCMUtils)
 BuildRequires:	cmake(KDevelop)
-Requires:	kdevelop >= %{EVRD}
+Requires:	kdevelop >= %{version}
 BuildSystem:	cmake
 BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
 BuildOption:	-DBSDTAR:BOOL=ON
